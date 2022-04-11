@@ -1,15 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Memory Game</title>
+
+    <style>
+        /* .card {
+            display: flex;
+            flex-direction: row;
+            background-color: aqua;
+            margin: 10px;
+            border: 1px black;
+            width: 50px;
+            border-radius: 3px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .card02 {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(255, 0, 64);
+            margin: 10px;
+            border: 1px black;
+            width: 50px;
+            border-radius: 3px;
+            padding: 20px;
+            font-size: 30px;
+        } */
+
+        .card {
+            display: flex;
+            background-color: DodgerBlue;
+            height: 137px;
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .card>div {
+            background-image: url("card.jpg");
+            background-size: 80px;
+
+            /* width: 50%; */
+            /* height: 50px; */
+        }
+
+        .card00>div .innerText {
+            visibility: hidden;
+        }
+
+        .card>div {
+            /* display: block; */
+            background-color: #f1f1f1;
+            margin: 10px;
+            border: 1px black;
+            width: 100px;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+
+    <!-- <style>
+        .flex-container {
+            display: flex;
+            background-color: DodgerBlue;
+            height: 100px;
+            width: 300px;
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+    </style> -->
+
 </head>
+
 <body>
-    <script src="001 MemoryGame.js"></script>
-    
-<form action="/action_page.php" target="_blank">
+
+    <!-- <form action="/action_page.php" target="_blank"> -->
     <!-- 
     Eu quero entrar aqui um tipo de formulario onde vai abrir uma nova pagina com o jogo.
     O formulario vai perguntar ao usuario, nome, idade, e-mail, dificuldade de jogo, num de jogadores 1 ou 2?
@@ -24,17 +101,35 @@
                 2 - pilha de cartas de ambos os lados - contagem de pontuacao
     -->
 
-</form>
+    </form>
 
-    <div id="game-table" >
-        <div class="flex-container">
+
+
+    <div id="game-table"></div>
+
+    <!-- <div class="flex-container">
             <div>1</div>
             <div>2</div>
             <div>3</div>
-          </div>
+            <div>4</div>
+        </div>
+        <div class="flex-container">
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+        <div class="flex-container">
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div> -->
 
-    </div>
 
 
+    <script src="001 MemoryGame.js"></script>
+    <!-- <script src="Style.css"></script> -->
 </body>
+
 </html>
